@@ -26,24 +26,26 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                               aria-controls="home" aria-selected="true">Lista de Compras</a>
+                            <a class="nav-link active" id="compras-tab" data-toggle="tab" href="#compras" role="tab"
+                               aria-controls="compras" aria-selected="true">Lista de Compras</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                               aria-controls="profile" aria-selected="false">Tratamentos</a>
+                            <a class="nav-link" id="tratamentos-tab" data-toggle="tab" href="#tratamentos" role="tab"
+                               aria-controls="tratamentos" aria-selected="false">Tratamentos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                               aria-controls="contact" aria-selected="false">Estoque</a>
+                            <a class="nav-link" id="estoque-tab" data-toggle="tab" href="#estoque" role="tab"
+                               aria-controls="estoque" aria-selected="false">Estoque</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <div class="card">
+            <!--Início tab compras-->
+            <div class="tab-pane fade show active" id="compras" role="tabpanel"
+                 aria-labelledby="compras-tab">
+                <div class="card painel-alerta">
                     <div class="card-body alert-panel">
                         <div class="alerta-compra section">
                             <div class="calendar">
@@ -64,11 +66,14 @@
                         </div>
                     </div>
                 </div>
+                <h4>Itens:</h4>
                 <div class="list-group">
                     <a class="list-group-item list-group-item-action flex-column align-items-start">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">Novalgina 1g - Dipirona Sódica</h5>
-                            <small class="text-danger"> <span class="badge badge-danger badge-pill">9</span> dias restantes</small>
+                            <small class="text-danger">
+                                <span class="badge badge-danger badge-pill">9</span> dias restantes
+                            </small>
                         </div>
                         <p class="mb-1"><b>Código: </b>A3h5i89</p>
                         <small>15 caixas necessárias</small>
@@ -76,7 +81,9 @@
                     <a class="list-group-item list-group-item-action flex-column align-items-start">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">Amoxicilina 500 mg</h5>
-                            <small class="text-danger"><span class="badge badge-danger badge-pill">8</span> dias restantes</small>
+                            <small class="text-danger"><span class="badge badge-danger badge-pill">8</span> dias
+                                restantes
+                            </small>
                         </div>
                         <p class="mb-1"><b>Código: </b>A3h5l73</p>
                         <small>10 caixas necessárias</small>
@@ -84,25 +91,210 @@
                     <a class="list-group-item list-group-item-action flex-column align-items-start">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">FortiFit 600g</h5>
-                            <small class="text-danger"><span class="badge badge-danger badge-pill">10</span> dias restantes</small>
+                            <small class="text-danger"><span class="badge badge-danger badge-pill">10</span> dias
+                                restantes
+                            </small>
                         </div>
                         <p class="mb-1"><b>Código: </b>A3h5k45</p>
                         <small>15 latas necessárias</small>
                     </a>
                 </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <p>Tratamentos</p>
+
+            <!--Início tab tratamentos-->
+            <div class="tab-pane fade" id="tratamentos" role="tabpanel" aria-labelledby="tratamentos-tab">
+                <div class="list-group">
+                    <div class="list-group-item list-group-item-action">
+                        <div class="info-residente">
+                            <span class="codigo-residente"><b>Dfhe83sd</b></span>
+                            <span class="nome-residente">José Augusto da Silva</span>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-secondary btn-sm">Visualizar Tratamento</button>
+                            <button class="btn btn-primary btn-sm">Gerar Cobrança</button>
+                        </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action">
+                        <div class="info-residente">
+                            <span class="codigo-residente"><b>d4Ghe83sd</b></span>
+                            <span class="nome-residente">Carmem dos Santos</span>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-secondary btn-sm">Visualizar Tratamento</button>
+                            <button class="btn btn-primary btn-sm">Gerar Cobrança</button>
+                        </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action">
+                        <div class="info-residente">
+                            <span class="codigo-residente"><b>HR5e83sd</b></span>
+                            <span class="nome-residente">Rita Araújo Oliveira</span>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-secondary btn-sm">Visualizar Tratamento</button>
+                            <button class="btn btn-primary btn-sm">Gerar Cobrança</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                <p>Estoque</p>
+
+            <!--Início tab estoque-->
+            <div class="tab-pane fade" id="estoque" role="tabpanel" aria-labelledby="estoque-tab">
+                <div class="card painel-alerta">
+                    <div class="card-body alert-panel">
+                        <div class="alerta-compra section">
+                            <div class="calendar">
+                                <div class="title-calendar">
+                                    <b>Próxima compra</b>
+                                </div>
+                                <div class="day-calendar">
+                                    05
+                                </div>
+                                <div class="month-calendar">
+                                    <b>dezembro</b>
+                                </div>
+                            </div>
+                            <p class="text-danger">Faltam 4 dias</p>
+                        </div>
+                        <div class="lista-compra section">
+                            <button class="btn btn-primary">Entrada de Estoque</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class="nome-medicamento">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Novalgina 1g - Dipirona Sódica
+                                    </button>
+                                </h5>
+                            </div>
+                            <div class="info-medicamento">
+                                <p><b>Código: </b>A3h5i89</p>
+                                <p><b>Consumo diário: </b>5 comprimidos</p>
+                            </div>
+                            <div class="estoque-medicamento">
+                                <small class="text-danger">
+                                    <span class="badge badge-danger badge-pill">9</span> dias restantes
+                                </small>
+                            </div>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                             data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="card-consumo">
+                                    <div class="header-card-consumo">
+                                        <div class="nome-residente"><b>Residente</b></div>
+                                        <div class="consumo-residente"><b>Consumo</b></div>
+                                    </div>
+                                    <div class="info-residente">
+                                        <div class="nome-residente"><span>José Augusto da Silva</span></div>
+                                        <div class="consumo-residente"><span>2 comprimidos</span></div>
+                                    </div>
+                                    <div class="info-residente">
+                                        <div class="nome-residente"><span>Rita Araújo Oliveira</span></div>
+                                        <div class="consumo-residente"><span>3 comprimidos</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <div class="nome-medicamento">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                        Amoxicilina 500 mg
+                                    </button>
+                                </h5>
+                            </div>
+                            <div class="info-medicamento">
+                                <p><b>Código: </b>A3h5l73</p>
+                                <p><b>Consumo diário: </b>8 cápsulas</p>
+                            </div>
+                            <div class="estoque-medicamento">
+                                <small class="text-danger">
+                                    <span class="badge badge-danger badge-pill">9</span> dias restantes
+                                </small>
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                             data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="card-consumo">
+                                    <div class="header-card-consumo">
+                                        <div class="nome-residente"><b>Residente</b></div>
+                                        <div class="consumo-residente"><b>Consumo</b></div>
+                                    </div>
+                                    <div class="info-residente">
+                                        <div class="nome-residente"><span>José Augusto da Silva</span></div>
+                                        <div class="consumo-residente"><span>2 cápsulas</span></div>
+                                    </div>
+                                    <div class="info-residente">
+                                        <div class="nome-residente"><span>Rita Araújo Oliveira</span></div>
+                                        <div class="consumo-residente"><span>3 cápsulas</span></div>
+                                    </div>
+                                    <div class="info-residente">
+                                        <div class="nome-residente"><span>Carmem dos Santos</span></div>
+                                        <div class="consumo-residente"><span>3 cápsulas</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="nome-medicamento">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                        FortiFit 600g
+                                    </button>
+                                </h5>
+                            </div>
+                            <div class="info-medicamento">
+                                <p><b>Código: </b>A3h5k45</p>
+                                <p><b>Consumo diário: </b>200 gramas</p>
+                            </div>
+                            <div class="estoque-medicamento">
+                                <small class="text-danger">
+                                    <span class="badge badge-danger badge-pill">9</span> dias restantes
+                                </small>
+                            </div>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                             data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="card-consumo">
+                                    <div class="header-card-consumo">
+                                        <div class="nome-residente"><b>Residente</b></div>
+                                        <div class="consumo-residente"><b>Consumo</b></div>
+                                    </div>
+                                    <div class="info-residente">
+                                        <div class="nome-residente"><span>Carmem dos Santos</span></div>
+                                        <div class="consumo-residente"><span>100 gramas</span></div>
+                                    </div>
+                                    <div class="info-residente">
+                                        <div class="nome-residente"><span>Rita Araújo Oliveira</span></div>
+                                        <div class="consumo-residente"><span>100 gramas</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-</div>
-<script type="text/javascript" src="js/libs/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/painel-principal.js"></script>
+    </div>
+    <script type="text/javascript" src="js/libs/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/painel-principal.js"></script>
 </body>
 </html>

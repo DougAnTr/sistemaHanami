@@ -8,70 +8,216 @@
   justify-content: center;
   padding-top: 50px;
 
-  .card{
+  .painel-alerta {
     margin-bottom: 15px;
+
+    .alert-panel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and(max-width: 600px) {
+        flex-flow: column;
+      }
+
+      .section {
+        width: 50%;
+
+        @media screen and(max-width: 600px) {
+          width: 100%;
+          margin: 10px;
+        }
+      }
+
+      .alerta-compra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid rgba(0, 0, 0, 0.125);
+
+        @media screen and(max-width: 600px) {
+          border: none;
+        }
+
+        p {
+          padding: 0;
+          margin: 0;
+        }
+
+        .calendar {
+          width: 30%;
+          height: 102px;
+          border: 1px solid rgba(0, 0, 0, 0.125);
+          border-radius: 5px;
+          margin-right: 10px;
+
+          @media screen and(max-width: 600px) {
+            width: 50%;
+          }
+
+          .title-calendar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.7em;
+            height: 25%;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+            background-color: #e6e6e6;
+          }
+
+          .day-calendar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            height: 50%;
+            background-color: rgba(244, 36, 40, 0.69);
+          }
+
+          .month-calendar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.7em;
+            height: 25%;
+            border-top: 1px solid rgba(0, 0, 0, 0.125);
+            background-color: #e6e6e6;
+          }
+        }
+      }
+
+      .lista-compra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 
-  .alert-panel {
-    display: flex;
-
-    .section {
-      width: 50%;
-    }
-
-    .alerta-compra {
+  #tratamentos {
+    .list-group-item {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      border-right: 1px solid rgba(0, 0, 0, 0.125);
 
-      p {
-        padding: 0;
-        margin: 0;
+      div {
+        width: 50%;
       }
 
-      .calendar {
+      @media screen and(max-width: 600px) {
+        flex-flow: column;
+
+        div {
+          width: 100%;
+        }
+      }
+
+      .info-residente {
+        display: flex;
+        align-items: center;
+
+        @media screen and(max-width: 600px) {
+
+          .nome-residente {
+            display: flex;
+            justify-content: center;
+          }
+        }
+
+        .codigo-residente {
+          width: 30%;
+        }
+
+        .nome-residente {
+          width: 70%;
+        }
+      }
+
+      .action {
+        display: flex;
+        justify-content: center;
+
+        button {
+          margin: 5px;
+        }
+      }
+    }
+  }
+
+  #estoque {
+    .card-header {
+      display: flex;
+
+      @media screen and(max-width: 600px) {
+        flex-flow: column;
+      }
+
+      .nome-medicamento {
         width: 30%;
-        height: 102px;
-        border: 1px solid rgba(0, 0, 0, 0.125);
-        border-radius: 5px;
-        margin-right: 10px;
 
-        .title-calendar {
+        @media screen and(max-width: 600px) {
+          width: 100%;
           display: flex;
           justify-content: center;
-          align-items: center;
-          font-size: 0.7em;
-          height: 25%;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-          background-color: #e6e6e6;
+        }
+      }
+
+      .info-medicamento {
+        width: 50%;
+        display: flex;
+
+        p {
+          margin: 0;
+          padding: 0;
+          width: 50%;
         }
 
-        .day-calendar {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 1.5em;
-          height: 50%;
-          background-color: rgba(244, 36, 40, 0.69);
+        @media screen and(max-width: 600px) {
+          display: none;
         }
+      }
 
-        .month-calendar {
-          display: flex;
+      .estoque-medicamento {
+        display: flex;
+        width: 20%;
+        justify-content: flex-end;
+
+        @media screen and(max-width: 600px) {
+          width: 100%;
           justify-content: center;
-          align-items: center;
-          font-size: 0.7em;
-          height: 25%;
-          border-top: 1px solid rgba(0, 0, 0, 0.125);
-          background-color: #e6e6e6;
         }
       }
     }
 
-    .lista-compra{
+    .card-body {
       display: flex;
       justify-content: center;
-      align-items: center;
+
+      .card-consumo {
+        width: 50%;
+
+        @media screen and(max-width: 600px) {
+          width: 100%;
+        }
+
+        .nome-residente {
+          width: 70%;
+          padding-left: 10px;
+        }
+
+        .consumo-residente {
+          display: flex;
+          justify-content: center;
+          width: 30%;
+        }
+
+        .header-card-consumo {
+          display: flex;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        }
+
+        .info-residente {
+          display: flex;
+        }
+      }
     }
   }
 }

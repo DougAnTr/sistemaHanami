@@ -11,33 +11,56 @@ html {
   justify-content: center;
   padding-top: 50px;
 }
-.painel-principal-page .card {
+.painel-principal-page .painel-alerta {
   margin-bottom: 15px;
 }
-.painel-principal-page .alert-panel {
+.painel-principal-page .painel-alerta .alert-panel {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.painel-principal-page .alert-panel .section {
+@media screen and (max-width: 600px) {
+  .painel-principal-page .painel-alerta .alert-panel {
+    flex-flow: column;
+  }
+}
+.painel-principal-page .painel-alerta .alert-panel .section {
   width: 50%;
 }
-.painel-principal-page .alert-panel .alerta-compra {
+@media screen and (max-width: 600px) {
+  .painel-principal-page .painel-alerta .alert-panel .section {
+    width: 100%;
+    margin: 10px;
+  }
+}
+.painel-principal-page .painel-alerta .alert-panel .alerta-compra {
   display: flex;
   justify-content: center;
   align-items: center;
   border-right: 1px solid rgba(0, 0, 0, 0.125);
 }
-.painel-principal-page .alert-panel .alerta-compra p {
+@media screen and (max-width: 600px) {
+  .painel-principal-page .painel-alerta .alert-panel .alerta-compra {
+    border: none;
+  }
+}
+.painel-principal-page .painel-alerta .alert-panel .alerta-compra p {
   padding: 0;
   margin: 0;
 }
-.painel-principal-page .alert-panel .alerta-compra .calendar {
+.painel-principal-page .painel-alerta .alert-panel .alerta-compra .calendar {
   width: 30%;
   height: 102px;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 5px;
   margin-right: 10px;
 }
-.painel-principal-page .alert-panel .alerta-compra .calendar .title-calendar {
+@media screen and (max-width: 600px) {
+  .painel-principal-page .painel-alerta .alert-panel .alerta-compra .calendar {
+    width: 50%;
+  }
+}
+.painel-principal-page .painel-alerta .alert-panel .alerta-compra .calendar .title-calendar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +69,7 @@ html {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   background-color: #e6e6e6;
 }
-.painel-principal-page .alert-panel .alerta-compra .calendar .day-calendar {
+.painel-principal-page .painel-alerta .alert-panel .alerta-compra .calendar .day-calendar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +77,7 @@ html {
   height: 50%;
   background-color: rgba(244, 36, 40, 0.69);
 }
-.painel-principal-page .alert-panel .alerta-compra .calendar .month-calendar {
+.painel-principal-page .painel-alerta .alert-panel .alerta-compra .calendar .month-calendar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,10 +86,118 @@ html {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   background-color: #e6e6e6;
 }
-.painel-principal-page .alert-panel .lista-compra {
+.painel-principal-page .painel-alerta .alert-panel .lista-compra {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.painel-principal-page #tratamentos .list-group-item {
+  display: flex;
+}
+.painel-principal-page #tratamentos .list-group-item div {
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .painel-principal-page #tratamentos .list-group-item {
+    flex-flow: column;
+  }
+  .painel-principal-page #tratamentos .list-group-item div {
+    width: 100%;
+  }
+}
+.painel-principal-page #tratamentos .list-group-item .info-residente {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .painel-principal-page #tratamentos .list-group-item .info-residente .nome-residente {
+    display: flex;
+    justify-content: center;
+  }
+}
+.painel-principal-page #tratamentos .list-group-item .info-residente .codigo-residente {
+  width: 30%;
+}
+.painel-principal-page #tratamentos .list-group-item .info-residente .nome-residente {
+  width: 70%;
+}
+.painel-principal-page #tratamentos .list-group-item .action {
+  display: flex;
+  justify-content: center;
+}
+.painel-principal-page #tratamentos .list-group-item .action button {
+  margin: 5px;
+}
+.painel-principal-page #estoque .card-header {
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .painel-principal-page #estoque .card-header {
+    flex-flow: column;
+  }
+}
+.painel-principal-page #estoque .card-header .nome-medicamento {
+  width: 30%;
+}
+@media screen and (max-width: 600px) {
+  .painel-principal-page #estoque .card-header .nome-medicamento {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.painel-principal-page #estoque .card-header .info-medicamento {
+  width: 50%;
+  display: flex;
+}
+.painel-principal-page #estoque .card-header .info-medicamento p {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .painel-principal-page #estoque .card-header .info-medicamento {
+    display: none;
+  }
+}
+.painel-principal-page #estoque .card-header .estoque-medicamento {
+  display: flex;
+  width: 20%;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 600px) {
+  .painel-principal-page #estoque .card-header .estoque-medicamento {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.painel-principal-page #estoque .card-body {
+  display: flex;
+  justify-content: center;
+}
+.painel-principal-page #estoque .card-body .card-consumo {
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .painel-principal-page #estoque .card-body .card-consumo {
+    width: 100%;
+  }
+}
+.painel-principal-page #estoque .card-body .card-consumo .nome-residente {
+  width: 70%;
+  padding-left: 10px;
+}
+.painel-principal-page #estoque .card-body .card-consumo .consumo-residente {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+.painel-principal-page #estoque .card-body .card-consumo .header-card-consumo {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.painel-principal-page #estoque .card-body .card-consumo .info-residente {
+  display: flex;
 }
 
 /*# sourceMappingURL=painel-principal.css.map */
