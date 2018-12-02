@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.painel-principal-page {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.painel-principal-page .card {
+  margin-bottom: 15px;
+}
+.painel-principal-page .alert-panel {
+  display: flex;
+}
+.painel-principal-page .alert-panel .section {
+  width: 50%;
+}
+.painel-principal-page .alert-panel .alerta-compra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+.painel-principal-page .alert-panel .alerta-compra p {
+  padding: 0;
+  margin: 0;
+}
+.painel-principal-page .alert-panel .alerta-compra .calendar {
+  width: 30%;
+  height: 102px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.painel-principal-page .alert-panel .alerta-compra .calendar .title-calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+  height: 25%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #e6e6e6;
+}
+.painel-principal-page .alert-panel .alerta-compra .calendar .day-calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  height: 50%;
+  background-color: rgba(244, 36, 40, 0.69);
+}
+.painel-principal-page .alert-panel .alerta-compra .calendar .month-calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+  height: 25%;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #e6e6e6;
+}
+.painel-principal-page .alert-panel .lista-compra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=painel-principal.css.map */

@@ -1,0 +1,77 @@
+@import "global";
+
+.painel-principal-page {
+  background-color: $backgroundColor;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+
+  .card{
+    margin-bottom: 15px;
+  }
+
+  .alert-panel {
+    display: flex;
+
+    .section {
+      width: 50%;
+    }
+
+    .alerta-compra {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid rgba(0, 0, 0, 0.125);
+
+      p {
+        padding: 0;
+        margin: 0;
+      }
+
+      .calendar {
+        width: 30%;
+        height: 102px;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 5px;
+        margin-right: 10px;
+
+        .title-calendar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 0.7em;
+          height: 25%;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+          background-color: #e6e6e6;
+        }
+
+        .day-calendar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5em;
+          height: 50%;
+          background-color: rgba(244, 36, 40, 0.69);
+        }
+
+        .month-calendar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 0.7em;
+          height: 25%;
+          border-top: 1px solid rgba(0, 0, 0, 0.125);
+          background-color: #e6e6e6;
+        }
+      }
+    }
+
+    .lista-compra{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

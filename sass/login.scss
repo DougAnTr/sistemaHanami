@@ -1,0 +1,65 @@
+@import "global";
+
+.login-page {
+  background-color: $backgroundColor;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  width: 100%;
+
+  .box-login {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+
+    @media screen and(max-width: 600px) {
+      width: 100%;
+    }
+
+    @media screen and(min-width: 600px) and (max-width: 900px) {
+      width: 80%;
+    }
+
+    div {
+      margin: 5px;
+    }
+
+    .header-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+    }
+
+    .body-box {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      width: 100%;
+
+      label {
+        display: flex;
+        flex-flow: column;
+        width: 50%;
+
+        @media (min-width: 600px) and (max-width: 900px) {
+          width: 75%;
+        }
+      }
+    }
+
+    .footer-box {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      width: 100%;
+
+      a {
+        width: 40%;
+      }
+    ;
+    }
+  }
+}

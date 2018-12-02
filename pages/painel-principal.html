@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/painel-principal.css">
+    <title>Sistema Hanami</title>
+</head>
+<body class="painel-principal-page">
+<div class="container">
+    <div class="painel">
+        <div class="header-painel">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="img/hanami-residencial-casa-de-repouso.jpg" width="30" height="30"
+                         class="d-inline-block align-top" alt="">
+                    Hanami
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                               aria-controls="home" aria-selected="true">Lista de Compras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                               aria-controls="profile" aria-selected="false">Tratamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                               aria-controls="contact" aria-selected="false">Estoque</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="card">
+                    <div class="card-body alert-panel">
+                        <div class="alerta-compra section">
+                            <div class="calendar">
+                                <div class="title-calendar">
+                                    <b>Próxima compra</b>
+                                </div>
+                                <div class="day-calendar">
+                                    05
+                                </div>
+                                <div class="month-calendar">
+                                    <b>dezembro</b>
+                                </div>
+                            </div>
+                            <p class="text-danger">Faltam 4 dias</p>
+                        </div>
+                        <div class="lista-compra section">
+                            <button class="btn btn-primary">Gerar lista de Compras</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Novalgina 1g - Dipirona Sódica</h5>
+                            <small class="text-danger"> <span class="badge badge-danger badge-pill">9</span> dias restantes</small>
+                        </div>
+                        <p class="mb-1"><b>Código: </b>A3h5i89</p>
+                        <small>15 caixas necessárias</small>
+                    </a>
+                    <a class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Amoxicilina 500 mg</h5>
+                            <small class="text-danger"><span class="badge badge-danger badge-pill">8</span> dias restantes</small>
+                        </div>
+                        <p class="mb-1"><b>Código: </b>A3h5l73</p>
+                        <small>10 caixas necessárias</small>
+                    </a>
+                    <a class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">FortiFit 600g</h5>
+                            <small class="text-danger"><span class="badge badge-danger badge-pill">10</span> dias restantes</small>
+                        </div>
+                        <p class="mb-1"><b>Código: </b>A3h5k45</p>
+                        <small>15 latas necessárias</small>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <p>Tratamentos</p>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <p>Estoque</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="js/libs/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/painel-principal.js"></script>
+</body>
+</html>
