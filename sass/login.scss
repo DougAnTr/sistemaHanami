@@ -7,6 +7,10 @@
   padding-top: 100px;
   width: 100%;
 
+  @media screen and(max-width: 600px) {
+    padding-top: 0;
+  }
+
   .box-login {
     width: 50%;
     display: flex;
