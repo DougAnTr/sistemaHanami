@@ -1,65 +1,53 @@
 html {
   height: 100%;
-  width: 100%;
-}
+  width: 100%; }
 
 .login-page {
   background-color: #f7f7f7;
   display: flex;
   justify-content: center;
   padding-top: 100px;
-  width: 100%;
-}
-.login-page .box-login {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: column;
-}
-@media screen and (max-width: 600px) {
+  width: 100%; }
+  @media screen and (max-width: 600px) {
+    .login-page {
+      padding-top: 0; } }
   .login-page .box-login {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  .login-page .box-login {
-    width: 80%;
-  }
-}
-.login-page .box-login div {
-  margin: 5px;
-}
-.login-page .box-login .header-box {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-}
-.login-page .box-login .body-box {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  width: 100%;
-}
-.login-page .box-login .body-box label {
-  display: flex;
-  flex-flow: column;
-  width: 50%;
-}
-@media (min-width: 600px) and (max-width: 900px) {
-  .login-page .box-login .body-box label {
-    width: 75%;
-  }
-}
-.login-page .box-login .footer-box {
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-  width: 100%;
-}
-.login-page .box-login .footer-box a {
-  width: 40%;
-}
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column; }
+    @media screen and (max-width: 600px) {
+      .login-page .box-login {
+        width: 100%; } }
+    @media screen and (min-width: 600px) and (max-width: 900px) {
+      .login-page .box-login {
+        width: 80%; } }
+    .login-page .box-login div {
+      margin: 5px; }
+    .login-page .box-login .header-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 15px; }
+    .login-page .box-login .body-box {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      width: 100%; }
+      .login-page .box-login .body-box label {
+        display: flex;
+        flex-flow: column;
+        width: 50%; }
+        @media (min-width: 600px) and (max-width: 900px) {
+          .login-page .box-login .body-box label {
+            width: 75%; } }
+    .login-page .box-login .footer-box {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      width: 100%; }
+      .login-page .box-login .footer-box a {
+        width: 40%; }
 
 /*# sourceMappingURL=login.css.map */

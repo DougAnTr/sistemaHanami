@@ -147,6 +147,19 @@
   }
 
   #estoque {
+
+    #estoque-morador {
+      display: none;
+    }
+
+    #estoque-produto {
+      display: none;
+    }
+
+    &.active {
+      display: block;
+    }
+
     .card-header {
       display: flex;
 

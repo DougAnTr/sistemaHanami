@@ -160,135 +160,268 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <div class="nome-medicamento">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Novalgina 1g - Dipirona Sódica
-                                    </button>
-                                </h5>
+                <div>
+                    <button onclick="changeFilter('produto')">
+                        Produto
+                    </button>
+                    <button onclick="changeFilter('morador')">
+                        Morador
+                    </button>
+                </div>
+                <div id="estoque-morador">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <div class="nome-medicamento">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            José Augusto da Silva
+                                        </button>
+                                    </h5>
+                                </div>
                             </div>
-                            <div class="info-medicamento">
-                                <p><b>Código: </b>A3h5i89</p>
-                                <p><b>Consumo diário: </b>5 comprimidos</p>
-                            </div>
-                            <div class="estoque-medicamento">
-                                <small class="text-danger">
-                                    <span class="badge badge-danger badge-pill">9</span> dias restantes
-                                </small>
-                            </div>
-                        </div>
 
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                             data-parent="#accordionExample">
-                            <div class="card-body">
-                                <div class="card-consumo">
-                                    <div class="header-card-consumo">
-                                        <div class="nome-residente"><b>Residente</b></div>
-                                        <div class="consumo-residente"><b>Consumo</b></div>
-                                    </div>
-                                    <div class="info-residente">
-                                        <div class="nome-residente"><span>José Augusto da Silva</span></div>
-                                        <div class="consumo-residente"><span>2 comprimidos</span></div>
-                                    </div>
-                                    <div class="info-residente">
-                                        <div class="nome-residente"><span>Rita Araújo Oliveira</span></div>
-                                        <div class="consumo-residente"><span>3 comprimidos</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <div class="nome-medicamento">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                        Amoxicilina 500 mg
-                                    </button>
-                                </h5>
-                            </div>
-                            <div class="info-medicamento">
-                                <p><b>Código: </b>A3h5l73</p>
-                                <p><b>Consumo diário: </b>8 cápsulas</p>
-                            </div>
-                            <div class="estoque-medicamento">
-                                <small class="text-danger">
-                                    <span class="badge badge-danger badge-pill">9</span> dias restantes
-                                </small>
-                            </div>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                             data-parent="#accordionExample">
-                            <div class="card-body">
-                                <div class="card-consumo">
-                                    <div class="header-card-consumo">
-                                        <div class="nome-residente"><b>Residente</b></div>
-                                        <div class="consumo-residente"><b>Consumo</b></div>
-                                    </div>
-                                    <div class="info-residente">
-                                        <div class="nome-residente"><span>José Augusto da Silva</span></div>
-                                        <div class="consumo-residente"><span>2 cápsulas</span></div>
-                                    </div>
-                                    <div class="info-residente">
-                                        <div class="nome-residente"><span>Rita Araújo Oliveira</span></div>
-                                        <div class="consumo-residente"><span>3 cápsulas</span></div>
-                                    </div>
-                                    <div class="info-residente">
-                                        <div class="nome-residente"><span>Carmem dos Santos</span></div>
-                                        <div class="consumo-residente"><span>3 cápsulas</span></div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="card-consumo">
+                                        <div class="header-card-consumo">
+                                            <div class="nome-residente"><b>Medicamentos</b></div>
+                                            <div class="consumo-residente"><b>Prazo</b></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>Novalgina 1g - Dipirona Sódica</span></div>
+                                            <div class="consumo-residente"><span>9 dias restantes</span></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>Amoxilina 500mg</span></div>
+                                            <div class="consumo-residente"><span>9 dias restantes</span></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <div class="nome-medicamento">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
-                                        FortiFit 600g
-                                    </button>
-                                </h5>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <div class="nome-medicamento">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                            Amoxicilina 500 mg
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div class="info-medicamento">
+                                    <p><b>Código: </b>A3h5l73</p>
+                                    <p><b>Consumo diário: </b>8 cápsulas</p>
+                                </div>
+                                <div class="estoque-medicamento">
+                                    <small class="text-danger">
+                                        <span class="badge badge-danger badge-pill">9</span> dias restantes
+                                    </small>
+                                </div>
                             </div>
-                            <div class="info-medicamento">
-                                <p><b>Código: </b>A3h5k45</p>
-                                <p><b>Consumo diário: </b>200 gramas</p>
-                            </div>
-                            <div class="estoque-medicamento">
-                                <small class="text-danger">
-                                    <span class="badge badge-danger badge-pill">9</span> dias restantes
-                                </small>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="card-consumo">
+                                        <div class="header-card-consumo">
+                                            <div class="nome-residente"><b>Residente</b></div>
+                                            <div class="consumo-residente"><b>Consumo</b></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>José Augusto da Silva</span></div>
+                                            <div class="consumo-residente"><span>2 cápsulas</span></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>Rita Araújo Oliveira</span></div>
+                                            <div class="consumo-residente"><span>3 cápsulas</span></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>Carmem dos Santos</span></div>
+                                            <div class="consumo-residente"><span>3 cápsulas</span></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                             data-parent="#accordionExample">
-                            <div class="card-body">
-                                <div class="card-consumo">
-                                    <div class="header-card-consumo">
-                                        <div class="nome-residente"><b>Residente</b></div>
-                                        <div class="consumo-residente"><b>Consumo</b></div>
-                                    </div>
-                                    <div class="info-residente">
-                                        <div class="nome-residente"><span>Carmem dos Santos</span></div>
-                                        <div class="consumo-residente"><span>100 gramas</span></div>
-                                    </div>
-                                    <div class="info-residente">
-                                        <div class="nome-residente"><span>Rita Araújo Oliveira</span></div>
-                                        <div class="consumo-residente"><span>100 gramas</span></div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <div class="nome-medicamento">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                            FortiFit 600g
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div class="info-medicamento">
+                                    <p><b>Código: </b>A3h5k45</p>
+                                    <p><b>Consumo diário: </b>200 gramas</p>
+                                </div>
+                                <div class="estoque-medicamento">
+                                    <small class="text-danger">
+                                        <span class="badge badge-danger badge-pill">9</span> dias restantes
+                                    </small>
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="card-consumo">
+                                        <div class="header-card-consumo">
+                                            <div class="nome-residente"><b>Residente</b></div>
+                                            <div class="consumo-residente"><b>Consumo</b></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>Carmem dos Santos</span></div>
+                                            <div class="consumo-residente"><span>100 gramas</span></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>Rita Araújo Oliveira</span></div>
+                                            <div class="consumo-residente"><span>100 gramas</span></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div id="estoque-produto">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <div class="nome-medicamento">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Novalgina 1g - Dipirona Sódica
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div class="info-medicamento">
+                                    <p><b>Código: </b>A3h5i89</p>
+                                    <p><b>Consumo diário: </b>5 comprimidos</p>
+                                </div>
+                                <div class="estoque-medicamento">
+                                    <small class="text-danger">
+                                        <span class="badge badge-danger badge-pill">9</span> dias restantes
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="card-consumo">
+                                        <div class="header-card-consumo">
+                                            <div class="nome-residente"><b>Residente</b></div>
+                                            <div class="consumo-residente"><b>Consumo</b></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>José Augusto da Silva</span></div>
+                                            <div class="consumo-residente"><span>2 comprimidos</span></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>Rita Araújo Oliveira</span></div>
+                                            <div class="consumo-residente"><span>3 comprimidos</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <div class="nome-medicamento">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                            Amoxicilina 500 mg
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div class="info-medicamento">
+                                    <p><b>Código: </b>A3h5l73</p>
+                                    <p><b>Consumo diário: </b>8 cápsulas</p>
+                                </div>
+                                <div class="estoque-medicamento">
+                                    <small class="text-danger">
+                                        <span class="badge badge-danger badge-pill">9</span> dias restantes
+                                    </small>
+                                </div>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="card-consumo">
+                                        <div class="header-card-consumo">
+                                            <div class="nome-residente"><b>Residente</b></div>
+                                            <div class="consumo-residente"><b>Consumo</b></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>José Augusto da Silva</span></div>
+                                            <div class="consumo-residente"><span>2 cápsulas</span></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>Rita Araújo Oliveira</span></div>
+                                            <div class="consumo-residente"><span>3 cápsulas</span></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>Carmem dos Santos</span></div>
+                                            <div class="consumo-residente"><span>3 cápsulas</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <div class="nome-medicamento">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                            FortiFit 600g
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div class="info-medicamento">
+                                    <p><b>Código: </b>A3h5k45</p>
+                                    <p><b>Consumo diário: </b>200 gramas</p>
+                                </div>
+                                <div class="estoque-medicamento">
+                                    <small class="text-danger">
+                                        <span class="badge badge-danger badge-pill">9</span> dias restantes
+                                    </small>
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="card-consumo">
+                                        <div class="header-card-consumo">
+                                            <div class="nome-residente"><b>Residente</b></div>
+                                            <div class="consumo-residente"><b>Consumo</b></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>Carmem dos Santos</span></div>
+                                            <div class="consumo-residente"><span>100 gramas</span></div>
+                                        </div>
+                                        <div class="info-residente">
+                                            <div class="nome-residente"><span>Rita Araújo Oliveira</span></div>
+                                            <div class="consumo-residente"><span>100 gramas</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
