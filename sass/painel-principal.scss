@@ -98,6 +98,17 @@
     }
   }
 
+  .pesquisa-estoque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input{
+      width: 70%;
+      margin-left: 10px;
+    }
+  }
+
   #tratamentos {
     .list-group-item {
       display: flex;
@@ -156,8 +167,20 @@
       display: none;
     }
 
-    &.active {
-      display: block;
+    .header-estoque {
+      width: 100%;
+
+      .filtro-estoque {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        button {
+          width: 40%;
+          margin: 10px;
+        }
+      }
+
     }
 
     .card-header {
